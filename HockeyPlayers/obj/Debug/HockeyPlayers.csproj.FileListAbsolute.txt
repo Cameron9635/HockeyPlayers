@@ -72,7 +72,10 @@ C:\Users\camer\Source\Repos\HockeyPlayers\HockeyPlayers\bin\System.Web.WebPages.
 C:\Users\camer\Source\Repos\HockeyPlayers\HockeyPlayers\bin\Newtonsoft.Json.xml
 C:\Users\camer\Source\Repos\HockeyPlayers\HockeyPlayers\bin\Antlr3.Runtime.pdb
 C:\Users\camer\Source\Repos\HockeyPlayers\HockeyPlayers\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\camer\Source\Repos\HockeyPlayers\HockeyPlayers\obj\Debug\HockeyPlayers.csprojAssemblyReference.cache
 C:\Users\camer\Source\Repos\HockeyPlayers\HockeyPlayers\obj\Debug\HockeyPlayers.csproj.CopyComplete
 C:\Users\camer\Source\Repos\HockeyPlayers\HockeyPlayers\obj\Debug\HockeyPlayers.dll
 C:\Users\camer\Source\Repos\HockeyPlayers\HockeyPlayers\obj\Debug\HockeyPlayers.pdb
+C:\Users\camer\Source\Repos\HockeyPlayers\HockeyPlayers\bin\EntityFramework.dll
+C:\Users\camer\Source\Repos\HockeyPlayers\HockeyPlayers\bin\EntityFramework.SqlServer.dll
+C:\Users\camer\Source\Repos\HockeyPlayers\HockeyPlayers\bin\EntityFramework.xml
+C:\Users\camer\Source\Repos\HockeyPlayers\HockeyPlayers\bin\EntityFramework.SqlServer.xml

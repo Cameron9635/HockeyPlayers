@@ -12,10 +12,10 @@
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.StartDate)
+            Start Date
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.EndDate)
+            End Date
         </th>
         <th>
             @Html.DisplayNameFor(model => model.Champion)
@@ -26,10 +26,10 @@
 @foreach (var item in Model) {
     <tr>
         <td>
-            @Html.DisplayFor(modelItem => item.StartDate)
+            @Html.DisplayFor(modelItem => item.DisplayStartDate)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.EndDate)
+            @Html.DisplayFor(modelItem => item.DisplayEndDate)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Champion)

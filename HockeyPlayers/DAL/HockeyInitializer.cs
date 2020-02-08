@@ -6,7 +6,7 @@ using System.Web;
 
 namespace HockeyPlayers.DAL
 {
-    public class HockeyInitializer : System.Data.Entity.DropCreateDatabaseIfModelChanges<HockeyContext>
+    public class HockeyInitializer : System.Data.Entity. DropCreateDatabaseIfModelChanges<HockeyContext>
     {
         protected override void Seed(HockeyContext context)
         {
@@ -27,7 +27,7 @@ namespace HockeyPlayers.DAL
             context.SaveChanges();
             var seasons = new List<Season>
             {
-                new Season{SeasonID=1920,StartDate=DateTime.Parse("2019-10-02"),EndDate=DateTime.Parse("2020-06-10"),Champion="Unknown"},
+                new Season{SeasonID=1920,StartDate=DateTime.Parse("2019-10-02"),EndDate=DateTime.Parse("2020-06-10"),Champion=""},
                 new Season{SeasonID=1819,StartDate=DateTime.Parse("2018-10-03"),EndDate=DateTime.Parse("2019-06-12"),Champion="Blues"},
                 new Season{SeasonID=1718,StartDate=DateTime.Parse("2017-10-04"),EndDate=DateTime.Parse("2018-06-07"),Champion="Capitals"}
             };
@@ -42,11 +42,12 @@ namespace HockeyPlayers.DAL
                 new SeasonPlayerStat{PlayerID=2,SeasonID=1819,Team="Oilers",GamesPlayed=81,Goals=41,Assists=62},
                 new SeasonPlayerStat{PlayerID=10,SeasonID=1920,Team="Maple Leafs",GamesPlayed=81,Goals=34,Assists=45},
                 new SeasonPlayerStat{PlayerID=10,SeasonID=1819,Team="Maple Leafs",GamesPlayed=82,Goals=31,Assists=56},
-                new SeasonPlayerStat{PlayerID=10,SeasonID=1718,Team="Islanders",GamesPlayed=76,Goals=37,Assists=49}
+                new SeasonPlayerStat{PlayerID=10,SeasonID=1718,Team="Islanders",GamesPlayed=76,Goals=37,Assists=49},
+                new SeasonPlayerStat{PlayerID=9,SeasonID=1718,Team="Blue Jackets",GamesPlayed=76,Goals=39,Assists=44}
             };
             seasonPlayerStats.ForEach(s => context.SeasonPlayerStats.Add(s));
             context.SaveChanges();
-;        }
+        }
 
     }
 }

@@ -18,10 +18,10 @@
             Current Team
         </th>
         <th>
-            Start Date
+            @Html.DisplayNameFor(model => model.StartDate)
         </th>
         <th>
-            End Date
+            @Html.DisplayNameFor(model => model.EndDate)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.Position)
@@ -38,7 +38,7 @@
             @Html.DisplayFor(modelItem => item.currentTeam)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.DisplayStartDate)
+            @Html.DisplayFor(modelItem => item.StartDate)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.EndDate)

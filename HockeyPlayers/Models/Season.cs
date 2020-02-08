@@ -15,6 +15,8 @@ namespace HockeyPlayers.Models
         public string Champion { get; set; }
         [NotMapped]
         public string DisplaySeason { get { return string.Format("{0}-{1}", StartDate.Year, EndDate.Year); } }
+        public string DisplayStartDate { get { return string.Format("{0}/{1}/{2}", StartDate.Month, StartDate.Day, StartDate.Year); } }
+        public string DisplayEndDate { get { return string.Format("{0}/{1}/{2}", EndDate.Month, EndDate.Day, EndDate.Year); } }
 
         public virtual ICollection<SeasonPlayerStat> SeasonPlayerStats { get; set; }
     }

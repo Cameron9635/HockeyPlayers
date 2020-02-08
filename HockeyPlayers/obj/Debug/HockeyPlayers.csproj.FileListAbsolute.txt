@@ -79,3 +79,4 @@ C:\Users\camer\Source\Repos\HockeyPlayers\HockeyPlayers\bin\EntityFramework.dll
 C:\Users\camer\Source\Repos\HockeyPlayers\HockeyPlayers\bin\EntityFramework.SqlServer.dll
 C:\Users\camer\Source\Repos\HockeyPlayers\HockeyPlayers\bin\EntityFramework.xml
 C:\Users\camer\Source\Repos\HockeyPlayers\HockeyPlayers\bin\EntityFramework.SqlServer.xml
+C:\Users\camer\Source\Repos\HockeyPlayers\HockeyPlayers\obj\Debug\HockeyPlayers.csprojAssemblyReference.cache

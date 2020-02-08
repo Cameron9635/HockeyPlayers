@@ -11,19 +11,19 @@
     <hr />
     <dl class="dl-horizontal">
         <dt>
-            @Html.DisplayNameFor(model => model.StartDate)
+            Start Date
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.StartDate)
+            @Html.DisplayFor(model => model.DisplayStartDate)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.EndDate)
+            End Date
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.EndDate)
+            @Html.DisplayFor(model => model.DisplayEndDate)
         </dd>
 
         <dt>
@@ -33,7 +33,44 @@
         <dd>
             @Html.DisplayFor(model => model.Champion)
         </dd>
-
+        <dt>
+            Players
+        </dt>
+        <dd>
+            <table class="table">
+                <tr>
+                    <th>Player</th>
+                    <th>Team</th>
+                    <th>Games Played</th>
+                    <th>Goals</th>
+                    <th>Assists</th>
+                    <th>Points</th>
+                </tr>
+                @foreach (var item in Model.SeasonPlayerStats)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Player.FullName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Team)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.GamesPlayed)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Goals)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Assists)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Points)
+                        </td>
+                    </tr>
+                }
+            </table>
+        </dd>
     </dl>
 </div>
 <p>
